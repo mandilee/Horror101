@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="WHeightMWidth">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="WHeightMWidth.Base">
+        <item name="android:paddingBottom">30dp</item>
+        <item name="android:layout_margin">@dimen/text_margin</item>
+    </style>
+
+    <style name="WHeightMWidth.Title">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="WHeightMWidth.Title.Sub">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="WHeightMWidth.Question">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:drawableRight">@android:drawable/ic_menu_help</item>
+    </style>
+
+    <style name="WHeightMWidth.Answer">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="WHeightMWidth.Answer.RadioButton">
+        <item name="android:saveEnabled">false</item>
+    </style>
+
+    <style name="image">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+</resources>

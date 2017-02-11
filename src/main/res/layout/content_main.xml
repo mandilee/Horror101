@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uk.co.mandilee.horror101.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        style="@style/WHeightMWidth.Base"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/WHeightMWidth.Title"
+            android:text="@string/app_title" />
+
+        <TextView
+            style="@style/WHeightMWidth.Title.Sub"
+            android:text="@string/app_subtitle" />
+
+        <!-- Question One -->
+        <TextView
+            style="@style/WHeightMWidth.Question"
+            android:text="@string/question_1" />
+
+        <LinearLayout style="@style/WHeightMWidth">
+
+            <ImageView
+                style="@style/image"
+                android:src="@drawable/image1" />
+
+            <RadioGroup
+                android:id="@+id/answers1"
+                style="@style/WHeightMWidth"
+                android:layout_width="wrap_content">
+
+                <RadioButton
+                    style="@style/WHeightMWidth.Answer.RadioButton"
+
+                    android:text="@string/answer_1a" />
+
+                <RadioButton
+                    style="@style/WHeightMWidth.Answer.RadioButton"
+                    android:text="@string/answer_1b" />
+
+                <RadioButton
+                    style="@style/WHeightMWidth.Answer.RadioButton"
+                    android:text="@string/answer_1c" />
+            </RadioGroup>
+        </LinearLayout>
+        <!-- Question Two -->
+        <TextView
+            style="@style/WHeightMWidth.Question"
+            android:text="@string/question_2" />
+
+        <LinearLayout style="@style/WHeightMWidth">
+
+            <ImageView
+                style="@style/image"
+                android:src="@drawable/image2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/answer_2a"
+                    style="@style/WHeightMWidth.Answer"
+                    android:text="@string/answer_2a" />
+
+                <CheckBox
+                    android:id="@+id/answer_2b"
+                    style="@style/WHeightMWidth.Answer"
+                    android:text="@string/answer_2b" />
+
+                <CheckBox
+                    android:id="@+id/answer_2c"
+                    style="@style/WHeightMWidth.Answer"
+                    android:text="@string/answer_2c" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Question Three -->
+        <TextView
+            style="@style/WHeightMWidth.Question"
+            android:text="@string/question_3" />
+
+        <LinearLayout style="@style/WHeightMWidth">
+
+            <ImageView
+                style="@style/image"
+                android:src="@drawable/image3" />
+
+            <RadioGroup
+                android:id="@+id/answers3"
+                style="@style/WHeightMWidth">
+
+                <RadioButton
+                    style="@style/WHeightMWidth.Answer.RadioButton"
+                    android:text="@string/answer_3a" />
+
+                <RadioButton
+                    style="@style/WHeightMWidth.Answer.RadioButton"
+                    android:text="@string/answer_3b" />
+
+                <RadioButton
+                    style="@style/WHeightMWidth.Answer.RadioButton"
+                    android:text="@string/answer_3c" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Question Four -->
+        <TextView
+            style="@style/WHeightMWidth.Question"
+            android:text="@string/question_4" />
+
+        <EditText
+            android:id="@+id/answers4"
+            style="@style/WHeightMWidth.Answer"
+            android:hint="@string/answer_4" />
+
+        <!-- Question Five -->
+        <TextView
+            style="@style/WHeightMWidth.Question"
+            android:text="@string/question_5" />
+
+        <LinearLayout style="@style/WHeightMWidth">
+
+            <ImageView
+                style="@style/image"
+                android:src="@drawable/image5" />
+
+            <RadioGroup
+                android:id="@+id/answers5"
+                style="@style/WHeightMWidth">
+
+                <RadioButton
+                    style="@style/WHeightMWidth.Answer.RadioButton"
+                    android:text="@string/answer_5a" />
+
+                <RadioButton
+                    style="@style/WHeightMWidth.Answer.RadioButton"
+                    android:text="@string/answer_5b" />
+
+                <RadioButton
+                    style="@style/WHeightMWidth.Answer.RadioButton"
+                    android:text="@string/answer_5c" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_button"
+            style="@style/WHeightMWidth"
+            android:gravity="center"
+            android:text="@string/button_text" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
