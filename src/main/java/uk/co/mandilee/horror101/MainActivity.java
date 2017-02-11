@@ -3,14 +3,15 @@ package uk.co.mandilee.horror101;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
@@ -207,20 +208,16 @@ public class MainActivity extends AppCompatActivity {
         numberAnswered += 1;
     }
 
+    @NonNull
     private String getScoreMessage() {
         int maxScore = 55;
         scorePercent = ((float) score / (float) maxScore) * 100;
-
-        Log.i("Score", String.valueOf(score));
-        Log.i("Score", String.valueOf(maxScore));
-        Log.i("scorePercent", String.valueOf((float) score / (float) maxScore));
-        Log.i("scorePercent", String.valueOf(scorePercent));
 
         if (scorePercent < 0) {
             return getResources().getString(R.string.under_0);
         } else if (scorePercent < 25) {
             return getResources().getString(R.string.under_25);
-        } else if (scorePercent < 5) {
+        } else if (scorePercent < 50) {
             return getResources().getString(R.string.under_50);
         } else if (scorePercent < 75) {
             return getResources().getString(R.string.under_75);
@@ -228,6 +225,45 @@ public class MainActivity extends AppCompatActivity {
             return getResources().getString(R.string.under_100);
         } else {
             return getResources().getString(R.string.full_marks);
+        }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+
+        RadioGroup rg_Answer1 = (RadioGroup) findViewById(R.id.answers1);
+        int i_Answer1 = rg_Answer1.getCheckedRadioButtonId();
+
+        RadioGroup rg_Answer3 = (RadioGroup) findViewById(R.id.answers3);
+        int i_Answer3 = rg_Answer3.getCheckedRadioButtonId();
+
+        RadioGroup rg_Answer5 = (RadioGroup) findViewById(R.id.answers5);
+        int i_Answer5 = rg_Answer5.getCheckedRadioButtonId();
+
+        outState.putInt("answer1", i_Answer1);
+        outState.putInt("answer3", i_Answer3);
+        outState.putInt("answer5", i_Answer5);
+
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        if (savedInstanceState.getInt("answer1") != -1) {
+            RadioButton v_Answer1 = (RadioButton) findViewById(savedInstanceState.getInt("answer1"));
+            v_Answer1.setChecked(true);
+        }
+
+        if (savedInstanceState.getInt("answer3") != -1) {
+            RadioButton v_Answer3 = (RadioButton) findViewById(savedInstanceState.getInt("answer3"));
+            v_Answer3.setChecked(true);
+        }
+
+        if (savedInstanceState.getInt("answer5") != -1) {
+            RadioButton v_Answer5 = (RadioButton) findViewById(savedInstanceState.getInt("answer5"));
+            v_Answer5.setChecked(true);
         }
     }
 }

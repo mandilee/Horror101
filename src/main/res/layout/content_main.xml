@@ -35,15 +35,17 @@
                 android:layout_width="wrap_content">
 
                 <RadioButton
+                    android:id="@+id/answer1a"
                     style="@style/WHeightMWidth.Answer.RadioButton"
-
                     android:text="@string/answer_1a" />
 
                 <RadioButton
+                    android:id="@+id/answer1b"
                     style="@style/WHeightMWidth.Answer.RadioButton"
                     android:text="@string/answer_1b" />
 
                 <RadioButton
+                    android:id="@+id/answer1c"
                     style="@style/WHeightMWidth.Answer.RadioButton"
                     android:text="@string/answer_1c" />
             </RadioGroup>
@@ -97,14 +99,17 @@
                 style="@style/WHeightMWidth">
 
                 <RadioButton
+                    android:id="@+id/answer2a"
                     style="@style/WHeightMWidth.Answer.RadioButton"
                     android:text="@string/answer_3a" />
 
                 <RadioButton
+                    android:id="@+id/answer2b"
                     style="@style/WHeightMWidth.Answer.RadioButton"
                     android:text="@string/answer_3b" />
 
                 <RadioButton
+                    android:id="@+id/answer2c"
                     style="@style/WHeightMWidth.Answer.RadioButton"
                     android:text="@string/answer_3c" />
             </RadioGroup>
@@ -136,14 +141,17 @@
                 style="@style/WHeightMWidth">
 
                 <RadioButton
+                    android:id="@+id/answer3a"
                     style="@style/WHeightMWidth.Answer.RadioButton"
                     android:text="@string/answer_5a" />
 
                 <RadioButton
+                    android:id="@+id/answer3b"
                     style="@style/WHeightMWidth.Answer.RadioButton"
                     android:text="@string/answer_5b" />
 
                 <RadioButton
+                    android:id="@+id/answer3c"
                     style="@style/WHeightMWidth.Answer.RadioButton"
                     android:text="@string/answer_5c" />
             </RadioGroup>
