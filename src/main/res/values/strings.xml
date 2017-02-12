@@ -3,24 +3,33 @@
     <string name="app_title">Welcome to Horror 101</string>
     <string name="app_subtitle">Will you get out of here alive?</string>
 
+    <string name="radio_hint">Select One</string>
+    <string name="checkbox_hint">Select Multiple</string>
+    <string name="edittext_hint">Enter Text</string>
+
+    <string name="q1">Question 1</string>
     <string name="question_1">You\'re in the kitchen cooking popcorn, about to watch a nighttime movie alone. \nYou hear a window break in the next room. \nWhat do you do?</string>
     <string name="answer_1a">Run upstairs</string>
     <string name="answer_1b">Go and investigate</string>
     <string name="answer_1c">Leave the house and call the police</string>
 
+    <string name="q2">Question 2</string>
     <string name="question_2">Stuck in a remote hotel with a vicious, crazy murderer. \nWhat do you do?</string>
     <string name="answer_2a">Go into room 237</string>
     <string name="answer_2b">Make a false trail for them to follow</string>
     <string name="answer_2c">Lock them in the pantry</string>
 
+    <string name="q3">Question 3</string>
     <string name="question_3">Stuck in a Zombie Apocalypse. \nWhat is your weapon of choice?</string>
     <string name="answer_3a">Machete</string>
     <string name="answer_3b">Shotgun</string>
     <string name="answer_3c">Chainsaw</string>
 
+    <string name="q4">Question 4</string>
     <string name="question_4">You\'re in the woods with a bunch of friends and a video camera. \nWho has the camera?</string>
     <string name="answer_4">Who has the camera?</string>
 
+    <string name="q5">Question 5</string>
     <string name="question_5">Dreams of a freaky guy have been haunting you for a while. You\'ve started waking up with mysterious cuts and bruises. \nWhat will you do?</string>
     <string name="answer_5a">Eat coffee granules to stay awake</string>
     <string name="answer_5b">Pull him out of the dream world when you wake up</string>
@@ -34,5 +43,10 @@
     <string name="under_75">A bit banged up, but you\'re alive. Mostly.\n</string>
     <string name="under_100">You made it! Go you!\n</string>
     <string name="full_marks">Top Marks! 100% \nYou\'re not the villan, are you..?\n</string>
+
+    <string name="image1_description">Scream</string>
+    <string name="image2_description">The Shining</string>
+    <string name="image3_description">Zombie</string>
+    <string name="image5_description">Freddy Kreuger</string>
 
 </resources>
